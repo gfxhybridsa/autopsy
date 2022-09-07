@@ -104,7 +104,7 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding-left: .1em;
-    display: grid;
+   /*display: grid;*/
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 
@@ -115,16 +115,6 @@ ul.features-list li{
     position: relative;
 }
 
-ul.features-list li :before {
-    content: '';
-    left: -2em;
-    position: center;
-    width: 20px;
-    height: 20px;
-    background-image: url('https://assets.codepen.io/2621168/bullet.svg');
-    background-size: contain;
-    margin-right: .5em;
-}
 
 .testimonials-section {
     background: var(--primary-color);
@@ -185,4 +175,16 @@ iframe {
     height: 300px;
 }
 
+nav.menu-btn {
+    display: block;
+}
 
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: 100vh;
+    padding: 1em;
+}
